@@ -1,0 +1,28 @@
++---------+------+--------+
+|  name   | hour | minute |
++---------+------+--------+
+| Vanessa | 10   | 16     |
+| Bruce   | 10   | 18     |
+| Barry   | 10   | 18     |
+| Luca    | 10   | 19     |
+| Sofia   | 10   | 20     |
+| Iman    | 10   | 21     |
+| Diana   | 10   | 23     |
+| Kelsey  | 10   | 23     |
+| Taylor  | 10   | 35     |
++---------+------+--------+
+
++---------+
+|  name   |
++---------+
+| Bruce   |
+| Kaelyn  |
+| Diana   |
+| Brooke  |
+| Kenny   |
+| Iman    |
+| Luca    |
+| Taylor  |
+| Benista |
++---------+
+

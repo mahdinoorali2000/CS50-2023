@@ -1,0 +1,123 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: rgb(26, 64, 187);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: aqua;
+    height:200px
+}
+header h1{
+    text-align: center;
+    padding-top: 90px;
+    box-sizing: border-box;
+}
+div.list{
+    background-color: cornflowerblue;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    right:-300px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+div.list.active{
+    right:0px
+}
+.list .image{
+    margin-top: 80px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    margin-bottom: 100px;
+}
+.list .main_list{
+    width: 100%;
+}
+.list .main_list li{
+    margin-bottom: 5px;
+    width: 100%;
+    
+}
+.list .main_list li a:nth-child(4){
+    border-top: 1px solid black;
+}
+.list .main_list li a{
+    text-decoration: none;
+    text-align: center;
+    padding:10px;
+    display: block;
+    color:rgb(16, 48, 33);
+    transition: all .2s;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+
+.list .main_list li a:hover{
+    background-color: blueviolet;
+}
+.list #btn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: gold;
+    width: 50px;
+    height: 50px;
+    top:30px;
+    right:300px;
+    cursor: pointer;
+}
+section{
+    color:aliceblue;
+    font-size: 20px;
+}
+div.text{
+    margin-left: 10px;
+    float:left;
+    width:50%;
+}
+div.text ul{
+    list-style: disc;
+    margin-left: 20px;
+}
+div.ima{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float:right;
+    height: 74vh;
+    width:700px;
+}
+div.ima .photo{
+    width:500px;
+    height: 300px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+}

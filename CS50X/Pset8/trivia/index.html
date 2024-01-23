@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function anscheker(correct, element){
+                if (correct){
+                    document.getElementById(element).innerHTML = 'True';
+                }
+                else
+                {
+                    document.getElementById(element).innerHTML = 'False';
+                }
+            };
+            function resetbut(){
+                var buttons = document.querySelectorAll(".button");
+                buttons.forEach(function(btn){
+                    btn.classList.remove('correct');
+                    btn.classList.remove('incorrect');
+                });
+            };
+            function answer(){
+                resetbut()
+                if (event.target.id == "T"){
+                    event.target.classList.add('correct');
+                    anscheker(true, "acr");
+                }
+                else
+                {
+                    event.target.classList.add('incorrect');
+                    anscheker(false, "acr");
+                }
+            };
+            document.addEventListener("DOMContentLoaded", function(event){
+                var buttons = document.querySelector(".button");
+                buttons.forEach(function(btn){
+                    btn.addEventListener("click", answer);
+                });
+                inf = document.querySelector("input");
+                cbut = document.querySelector("#check");
+                cbut.addEventListener("click", function (evt) {
+                    if (inf.value == "0"){
+                        anscheker(true, "azr");
+                    }
+                    else
+                    {
+                        anscheker(false, "azr");
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>How do you start writing a for loop in C?<h3>
+                    <h3 id = "acr"></h3>
+                        <button class = "button">for (int i = 0; while < 5; i++)</button>
+                        <button class = "button">for (int i = 0; switch < 5; i++)</button>
+                        <button id = "T" class = "button">for (int i = 0; i < 5; i++)</button>
+                        <button class = "button">for (x in y)</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Array indexes start with:<h3>
+                    <h3 id = "azr"></h3>
+                    <input type = "text">
+                    <button id = "check" class = "input">check!</button>
+            </div>
+        </div>
+    </body>
+</html>
