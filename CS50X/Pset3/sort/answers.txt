@@ -1,0 +1,13 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Because it took the most time to sort the reverse file of 50,000
+
+sort2 uses: Merge Sort
+
+How do you know?: Because it took the least time to sort all the files
+
+sort3 uses: Selection Sort
+
+How do you know?: Because in reverse file sorting, it had a time between merge sort
+and bubble sort, also in sorted file, it had the highest time and was no different from
+ reverse file sort, in fact, the worst and best case were the same.
